@@ -11,9 +11,9 @@ The best way to do the "remembering" will be to use the `session[]` hash. The se
 
 ### Hints and caveats
 
-If the user explicitly includes new sorting/filtering settings in `params[]`, the session should not override them. Instead, these new settings should be remembered in the session.
+If the user explicitly includes new sorting/filtering settings in `params[]`, the session should not override them. Instead, these new settings should be remembered in the session. YES
 
-If a user unchecks all checkboxes, use the settings stored in the `session[]` hash, since it doesn't make sense for a user to uncheck all the boxes. 
+If a user unchecks all checkboxes, use the settings stored in the `session[]` hash, since it doesn't make sense for a user to uncheck all the boxes. YES
 
 To be RESTful, we want to preserve the property that a URI that results in a sorted/filtered view always contains the corresponding sorting/filtering parameters. Therefore, if you find that the incoming URI is lacking the right `params[]` and you're forced to fill them in from the `session[]`, the RESTful thing to do is to `redirect_to` the new URI containing the appropriate parameters. There is an important corner case to keep in mind here, though: if the previous action had placed a message in the `flash[]` to display after a redirect to the movies page, your additional redirect will delete that message and it will never appear, since the `flash[]` only survives across a single redirect. To fix this, use `flash.keep` right before your additional redirect. 
 

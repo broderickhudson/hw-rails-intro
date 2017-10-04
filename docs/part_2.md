@@ -27,12 +27,12 @@ Regarding (ii), you'll probably end up replacing `Movie.all` in the controller m
 
 ### IMPORTANT for grading purposes
 
-* Your form tag should have the id `ratings_form`.
-* The form submit button for filtering by ratings should have an HTML
-element id of `ratings_submit` 
+* Your form tag should have the id `ratings_form`. YES
+* The form submit button for filtering by ratings should have an HTML 
+element id of `ratings_submit` YES
 * Each checkbox should have an HTML element id of `ratings_#{rating}`,
 where the interpolated rating should be the rating itself, such as
-`ratings_PG-13`, `ratings_G`, and so on.
+`ratings_PG-13`, `ratings_G`, and so on. YES
 
 ### Hints and caveats
 

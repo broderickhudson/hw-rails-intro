@@ -16,7 +16,7 @@ The result should look something like this:
 
 **IMPORTANT for grading purposes:**
 
-The link (that is, the `<a>` tag) for sorting by "title" should have the HTML element id `title_header`, and the link for sorting by release date should have the HTML element id `release_date_header`.  The table containing the list of movies should have the HTML element id `movies` (this has already been set for you by the starter code).
+The link (that is, the `<a>` tag) for sorting by "title" should have the HTML element id `title_header`, and the link for sorting by release date should have the HTML element id `release_date_header`.  The table containing the list of movies should have the HTML element id `movies` (this has already been set for you by the starter code). YES
 
 ### Hints and caveats:
 
